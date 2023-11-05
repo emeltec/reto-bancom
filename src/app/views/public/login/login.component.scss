@@ -1,0 +1,30 @@
+@import '/src/variables.scss';
+
+.login {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('/assets/images/banner_login.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+}
+
+.btn-sign-google {
+  text-transform: none;
+  padding: 0.75rem 1rem;
+
+  & img {
+    margin-bottom: 3px;
+    margin-right: 5px
+  }
+}

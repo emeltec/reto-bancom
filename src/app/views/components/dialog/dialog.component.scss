@@ -1,0 +1,13 @@
+.dialog-content {
+  padding: 1.5rem;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 1.5rem;
+
+  & img {
+    cursor: pointer;
+  }
+}

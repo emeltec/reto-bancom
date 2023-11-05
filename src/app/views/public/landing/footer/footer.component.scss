@@ -1,0 +1,17 @@
+.footer {
+  background-color: black;
+  color: #FFF;
+
+  & .link {
+    cursor: pointer;
+  }
+
+  & .copy {
+    font-size: 0.85rem;
+    color: #D1D5DB;
+  }
+
+  & .logos img {
+    width: 135px;
+  }
+}
