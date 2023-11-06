@@ -1,6 +1,6 @@
 # Reto BanCom
 
-[Ver en funcionamiento](https://link-url-here.org)
+[VER PUBLICADO](https://emeltec.github.io/reto-bancom/){:target="_blank"}
 
 
 ## Development server
