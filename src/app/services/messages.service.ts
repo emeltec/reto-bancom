@@ -15,6 +15,7 @@ export class MessagesService {
       duration: 3000,
       verticalPosition: "top",
       horizontalPosition: "center",
+      panelClass: ['blue-snackbar']
     });
   }
 

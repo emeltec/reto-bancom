@@ -7,7 +7,7 @@
     width: 100%;
     padding-right: 1rem;
     padding-left: 1rem;
-    background-color: #f3f3f3;
+    background-color: #f1f2fe;
     overflow-y: auto;
     visibility: hidden;
     transition: transform .3s ease-in-out, visibility .3s ease-in-out;
@@ -41,4 +41,8 @@
 
 .bg-purple {
   background-color: #6f42c1;
+}
+
+.nav-content {
+  position: relative;
 }
