@@ -19,17 +19,6 @@ const routes: Routes = [
     loadChildren: () => import('./views/public/login/login.module').then(m => m.LoginModule)
   },
 
-  /// otra forma
-  // {
-  //   path: '', component: AppComponent,
-  //   children: [
-  //     {
-  //       path: 'users',
-  //       loadChildren: () => import('./views/private/users/users.module').then(m => m.UsersModule)
-  //     },
-  //   ]
-  // },
-
   { path: 'home', component: LandingComponent },
   { path: '**', redirectTo: 'home' },
 ];
