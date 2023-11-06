@@ -16,12 +16,12 @@ export class UsersService {
 
   getUsers() {
     return this.http.get<IUserResponse[]>(this.apiUrl).pipe(
-      map(users => this.useraDapter(users))
+      map(users => this.userDapter(users))
     );
   }
 
 
-  useraDapter(users: IUserResponse[]) {
+  userDapter(users: IUserResponse[]) {
     return users.map(user => {
       return {
         id: user.id,
