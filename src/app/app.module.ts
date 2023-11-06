@@ -7,6 +7,7 @@ import { LoginModule } from './views/public/login/login.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { LandingModule } from './views/public/landing/landing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { LandingModule } from './views/public/landing/landing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     LoginModule,
     BrowserAnimationsModule,
     LandingModule,

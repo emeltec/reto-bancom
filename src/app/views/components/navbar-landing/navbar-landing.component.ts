@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar-landing',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarLandingComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }
@@ -16,7 +19,11 @@ export class NavbarLandingComponent implements OnInit {
     this.menuCollapsable();
   }
 
-  menuCollapsable(){
+  goToLogin() {
+    this.router.navigate(['/login']);
+  }
+
+  menuCollapsable() {
     const button = document.querySelector('#navbarSideCollapse');
     const canvas = document.querySelector('.offcanvas-collapse');
     button?.addEventListener('click', () => {

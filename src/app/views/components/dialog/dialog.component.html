@@ -4,6 +4,20 @@
   </div>
 
   <div class="dialog-body">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, facere id vero quod iste culpa maxime perferendis alias dicta! Porro quae deleniti eum voluptatum accusantium molestiae veniam sunt praesentium illo.
+    <h4>Crear post</h4>
+    <form [formGroup]="formPost" (ngSubmit)="savePost()">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" formControlName="title" id="titleInput" autocomplete="off" required>
+        <label for="titleInput">Título</label>
+      </div>
+      <div class="form-floating mb-3">
+        <textarea class="form-control" formControlName="description" id="decsInput" autocomplete="off" rows="3" required></textarea>
+        <label for="decsInput">Descripción</label>
+      </div>
+
+      <div class="mb-3 text-center">
+        <button class="btn btn-primary btn-login mb-2" type="submit">Guardar</button>
+      </div>
+    </form>
   </div>
 </div>

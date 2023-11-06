@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './views/public/login/login.component';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './views/public/landing/landing.component';
+import { UserLoggedGuard } from './guards/user-logged.guard';
 
 const routes: Routes = [
   {
@@ -10,7 +11,8 @@ const routes: Routes = [
   },
   {
     path: 'users',
-    loadChildren: () => import('./views/private/users/users.module').then(m => m.UsersModule)
+    loadChildren: () => import('./views/private/users/users.module').then(m => m.UsersModule),
+    canActivate: [UserLoggedGuard]
   },
   {
     path: 'login',

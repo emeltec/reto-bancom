@@ -11,3 +11,11 @@
     cursor: pointer;
   }
 }
+
+.dialog-body {
+  padding: 1.5rem;
+
+  & textarea {
+    height: auto !important;
+  }
+}
